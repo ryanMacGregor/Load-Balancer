@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            //Client
+            "args": ["-s", "192.168.56.1", "-p", "55555", "-l", "clog.txt"]
+            //Server
+            //"args": ["-p", "3279", "-l", "slog.txt", "-w", "https://tntech-ngin.github.io/csc4200/programming3/index.html"]
+            //Redirector
+            //"args": ["-s", "127.0.1.1", "-p", "3279", "-l", "rlog.txt"]
+        }
+    ]
+}
