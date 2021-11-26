@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Networking and the Internet</title>
+    
+<link rel="icon" type="image/png" href="https://tntech-ngin.github.io/csc4200/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/csc4200/css/style.min.cdd399773d797c547068fee55bab258bfc49a735f914a29ab05b35a94cae6ab6.css" integrity="sha256-zdOZdz15fFRwaP7lW6sli/xJpzX5FKKasFs1qUyuarY=">
+<link rel="stylesheet" type="text/css" href="https://tntech-ngin.github.io/csc4200/css/icons.css">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    
+
+    
+
+
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/csc4200">
+        <img src="/csc4200/images/logos/logo.svg" alt="" width="112" height="28">
+      </a>
+      <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+        <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-start">
+          <a class="navbar-item is-hidden-mobile">
+            <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+              <svg width="1000px" height="1000px">
+                <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                <path class="path2" d="M 300 500 L 700 500"></path>
+                <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+              </svg>
+              <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+            </div>
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <a href="/csc4200/syllabus/index.html" class="navbar-item is-secondary">
+            Syllabus
+          </a>
+          <a href="/csc4200/material/index.html" class="navbar-item is-secondary">
+            Material
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Programming Assignments
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/csc4200/programming1/index.html" class="navbar-item">
+                Assignment 1
+              </a>
+              <a href="/csc4200/programming2/index.html" class="navbar-item">
+                Assignment 2
+              </a>
+              <a href="/csc4200/programming3/index.html" class="navbar-item">
+                Assignment 3
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Homeworks
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/csc4200/homeworks/homework1.pdf" class="navbar-item">
+                Homework 1
+              </a>
+              <a href="/csc4200/homeworks/homework2.pdf" class="navbar-item">
+                Homework 2
+              </a>
+              <a href="/csc4200/homeworks/homework3.pdf" class="navbar-item">
+                Homework3
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</nav>
+
+
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/csc4200">
+        <img src="/csc4200/images/logos/logo.svg" alt="" width="112" height="28">
+      </a>
+      <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+        <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+      <div class="navbar-start">
+        <a class="navbar-item is-hidden-mobile">
+          <div id="cloned-menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="cloned-menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <a href="/csc4200/syllabus/index.html" class="navbar-item is-secondary">
+          Syllabus
+        </a>
+        <a href="/csc4200/material/index.html" class="navbar-item is-secondary">
+          Material
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Programming Assignments
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/csc4200/programming1/index.html" class="navbar-item">
+              Assignment 1
+            </a>
+            <a href="/csc4200/programming2/index.html" class="navbar-item">
+              Assignment 2
+            </a>
+            <a href="/csc4200/programming3/index.html" class="navbar-item">
+              Assignment 3
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Homeworks
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/csc4200/homeworks/homework1.pdf" class="navbar-item">
+              Homework 1
+            </a>
+            <a href="/csc4200/homeworks/homework2.pdf" class="navbar-item">
+              Homework 2
+            </a>
+            <a href="/csc4200/homeworks/homework3.pdf" class="navbar-item">
+              Homework3
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</nav>
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Create your own content delivery network</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <h2 id="due-date---november-27-2020-10pm-cst">Due Date - November 27, 2020, 10PM CST</h2>
+<hr>
+<p><strong>Objectives</strong></p>
+<hr>
+<ol>
+<li>
+<p>Learn to break down a very complex problem into smaller problems</p>
+</li>
+<li>
+<p>Solve each smaller problem and bring them together to solve the larger problem</p>
+</li>
+<li>
+<p>Learn how CDNs work and build your own CDN</p>
+</li>
+</ol>
+<hr>
+<p><strong>Overview</strong></p>
+<hr>
+<!-- raw HTML omitted -->
+<p><img src="/csc4200/img/cdn-load-balancer.png" alt="overview"></p>
+<!-- raw HTML omitted -->
+<p>In this project, you are going to build on the first and the second project. You will build your own &ldquo;CDN load-balancer&rdquo;. A cloud typically hosts multiple copies (replicas) of the same content. Depending on where the request is coming from, it routes the requests a suitable replica.  A primary component of any CDN is the entity called a load-balancer. The function of a load-balancer is route requests to the &ldquo;most suitable&rdquo; server. CDNs choose their own metric for defining which server is the most suitable. It can be the replica with the lowest latency, the replica with lowest loss, or a combination of multiple parameters.</p>
+<!-- raw HTML omitted -->
+<p>In this exercise, you will create three replicas with the same content. You will also keep track of the delay and loss parameters to each replica. At the beginning, each replica will download some content from a website. When a request comes in, you will redirect the request to the most suitable replica (see the definition below), download the content, and close the connection. When the next request comes in, you will redirect that request to the most suitable replica at that time. The network conditions will change throughout the experiment.</p>
+<!-- raw HTML omitted -->
+<p>The client and server communications may use TCP or UDP.
+<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<pre><code>$ replicaserver -p &lt;PORT&gt; -s &lt;LOG FILE LOCATION&gt; -p &lt;web page to download&gt;
+</code></pre><p>1.<code>PORT</code> - The port server listens on.</p>
+<p>2.<code>Log file location</code> - Where you will keep a record of actions.</p>
+<p>3.<code>p</code> - Which webpage to download and serve.</p>
+<p>For example:</p>
+<pre><code>$ replicaserver -p 30000 -l /tmp/logfile -p www.nytimes.com
+</code></pre><hr>
+<p>Functional requirements</p>
+<hr>
+<ol>
+<li>The server must open a TCP/UDP socket on the specified port number</li>
+<li>The server should gracefully process incorrect port number and exit with a non-zero error code</li>
+<li>The server should download the file specified by -p and save it to the memory</li>
+</ol>
+<hr>
+<p><em><strong>Load Balancer Specifications</strong></em></p>
+<hr>
+<!-- raw HTML omitted -->
+<pre><code>$ loadbalancer -s &lt;SERVER-IP&gt; -p &lt;PORT&gt; -l LOGFILE
+</code></pre><p>The load balancer takes three arguments:</p>
+<p>1.<code>Server IPs</code> - A list of replica servers' IP addresses</p>
+<p>2.<code>PORT</code> - The port the servers listen on. They will all listen to the same port</p>
+<p>2.<code>Log file location</code> - Where you will keep a record of packets you received.</p>
+<pre><code>For example:
+$ loadbalancer -s replica_servers.txt -p 6543 -l LOGFILE
+</code></pre><!-- raw HTML omitted -->
+<ol>
+<li>Design your own protocol headers for most efficient communication between the load-balancer and the replicas</li>
+<li>The client should connect to the replica server that has the highest preference.</li>
+<li>We define the preference as lowest combined value of weighed delay and loss. Lower value wins.</li>
+<li>Preference = 0.75<em>loss percentage + 0.25</em>delay in milliseconds</li>
+<li>The load-balancer should probe the replica servers periodically and keep a list of preferences. You should be able to use a ping like program for this part.</li>
+<li>The load-balancer should be able to accept and process multiple connection from clients at the same time</li>
+</ol>
+<hr>
+<p><em><strong>Client Specifications</strong></em></p>
+<hr>
+<!-- raw HTML omitted -->
+<pre><code>$ anonclient -s &lt;load-balancer-IP&gt; -p &lt;PORT&gt; -l LOGFILE
+</code></pre><p>The client takes three arguments:</p>
+<p>1.<code>load-balancer IP</code> - The IP address of the load-balancer.</p>
+<p>2.<code>PORT</code> - The port the server listens on.</p>
+<p>2.<code>Log file location</code> - Where you will keep a record of packets you received.</p>
+<pre><code>For example:
+$ anonclient -s 192.168.2.1 -p 6543 -l LOGFILE
+</code></pre><hr>
+<p><strong>Client Requirements</strong></p>
+<hr>
+<ol>
+<li>The client will simply open a connection to the load-balancer and request a content</li>
+<li>Design your own protocol headers for most efficient communication between the client and the load-balancer</li>
+<li>The client should be able to receive the content and write to a file</li>
+<li>The client should gracefully process incorrect port number and exit with a non-zero error code (you can assume that the folder is always correct). In addition to exit, the client must print out on standard error (std::cerr) an error message that starts with ERROR: string.</li>
+</ol>
+<hr>
+<p><strong>Additional requirements:</strong></p>
+<hr>
+<ol>
+<li>Code must compile/run on Google Cloud Ubuntu VM (18.04) - we will test your code only on the VM.</li>
+<li>For each packet received, log interaction at the load-balancer in the following format:</li>
+</ol>
+<pre><code>Request from &lt;CLIENT IP&gt; for  &lt;URL&gt;. Redirecting to &lt;Replica IP&gt;, Preference &lt;Preference&gt;, Next Preference was &lt;Next lowest preference&gt; to &lt;Replica IP&gt;
+Response from &lt;Replica IP&gt;, sending request to &lt;Client IP&gt;
+
+</code></pre><ol start="3">
+<li>If error occurs: log the following:</li>
+</ol>
+<pre><code>&quot;Error: Unable to handle request between &lt;Client IP&gt;, &lt;Replica IP&gt;, &lt;Preference&gt;, &lt;Error details&gt;
+</code></pre><ol start="4">
+<li>Set the loss and delay using these commands:</li>
+</ol>
+<pre><code>dnf install -y kernel-modules-extra
+dnf install -y kernel-debug-modules-extra
+reboot
+tc qdisc add dev &lt;ethernet device, e.g, eth0&gt; root netem delay 200ms
+tc qdisc add dev &lt;ethernet device, e.g, eth0&gt; root netem loss 20%
+tc qdisc del dev eth0 root
+</code></pre>
+  </div>
+</section>
+
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/csc4200/images/logos/fresh-white-alt.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      
+      <li>
+        <a href="/csc4200/material/">
+          Course Material
+        </a>
+      </li>
+      
+      <li>
+        <a href="/csc4200/programming3/">
+          Create your own content delivery network
+        </a>
+      </li>
+      
+      <li>
+        <a href="/csc4200/programming1/">
+          Programming Assignment
+        </a>
+      </li>
+      
+      <li>
+        <a href="/csc4200/syllabus/">
+          Syllabus
+        </a>
+      </li>
+      
+      <li>
+        <a href="/csc4200/programming2/">
+          To the Cloud and Back
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://tntech-ngin.github.io/csc4200/js/fresh.js"></script>
+<script src="https://tntech-ngin.github.io/csc4200/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </body>
+</html>

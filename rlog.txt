@@ -1,0 +1,5 @@
+INFO:root:
+
+File Containing List of Replica Server IPs: ipList.txt
+INFO:root:Server port to listen on: 55555
+INFO:root:Client log file location: rlog.txt

@@ -1,0 +1,5 @@
+INFO:root:
+
+Target server IP: 192.168.56.1
+INFO:root:Target server port: 55555
+INFO:root:Client log file location: clog.txt

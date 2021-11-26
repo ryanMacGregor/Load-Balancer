@@ -1,0 +1,5 @@
+INFO:root:
+
+Server port: 3279
+INFO:root:Server log file location: slog.txt
+INFO:root:Page to download: https://tntech-ngin.github.io/csc4200/programming3/index.html
